@@ -6,12 +6,21 @@
 :root {
   --background-color: white;
   --text-color: black;
+  --input-color: #f4f4f4;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+input {
+  background-color: var(--input-color);
+}
+
+.search-icon {
+  background-color: var(--input-color);
 }
 
 a {
