@@ -1,0 +1,18 @@
+import React, { FC } from 'react'
+import { IWordProps } from './interfaces/IWord'
+
+const WordHeader: FC<IWordProps> = ({ word }) => {
+  return (
+    <div className='mt-[10%] lg:mt-[5%] flex items-center justify-between'>
+      <div className='flex flex-col gap-4'>
+        <h1 className='font-bold text-[32px]'>{word.word}</h1>
+        <p className='text-[#a445ed] text-[18px]'>{word.phonetic}</p>
+      </div>
+      <div>
+        <img src='/assets/images/icon-play.svg' alt='' />
+      </div>
+    </div>
+  )
+}
+
+export default WordHeader

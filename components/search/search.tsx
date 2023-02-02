@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
+import { ISearch } from './interfaces/ISearch'
 
-const Search: FC = () => {
+const Search: FC<ISearch> = ({ searchText, setSearchText }) => {
   return (
     <div className='input-group relative flex flex-wrap h-[48px] items-stretch w-full mt-[10%] md:mt-[5%]'>
       <input
@@ -9,6 +10,8 @@ const Search: FC = () => {
         placeholder='Search'
         aria-label='Search'
         aria-describedby='button-addon2'
+        value={searchText}
+        onChange={(e) => setSearchText(e.target.value)}
       />
       <button
         className='btn inline-block px-6 py-2.5 bg-inherit font-medium text-xs leading-tight uppercase  flex items-center search-icon rounded-xl'
