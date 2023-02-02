@@ -20,6 +20,7 @@ export default function Home() {
         setWord(data[0])
         setNotFound(false)
       } catch (error) {
+        setWord(null)
         setNotFound(true)
       }
     }
@@ -51,7 +52,11 @@ export default function Home() {
       <main className={`${selectedFont}`}>
         <Search searchText={searchText} setSearchText={setSearchText} />
         {word && <Word word={word} />}
-        {notFound && <p>Not Found</p>}
+        {notFound && (
+          <div className='flex items-center justify-center mt-[10%]'>
+            <p>😥</p>
+          </div>
+        )}
       </main>
     </>
   )
