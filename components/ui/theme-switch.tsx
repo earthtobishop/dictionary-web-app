@@ -18,10 +18,6 @@ const ThemeSwitch: FC = () => {
     setDarkMode(!darkMode)
   }
 
-  const text = darkMode ? 'Light Mode' : 'Dark Mode'
-
-  console.log(text)
-
   return (
     <>
       <label className={styles.switch}>

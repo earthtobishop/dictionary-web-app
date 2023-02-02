@@ -1,7 +1,8 @@
+import { useFont } from '@/context/FontContext'
 import React, { FC, useState } from 'react'
 
 const DropdownMenu: FC = () => {
-  const [font, setFont] = useState('Sans Serif')
+  const { font, setFont } = useFont()
 
   return (
     <div className='flex justify-center'>
