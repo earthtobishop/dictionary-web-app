@@ -3,7 +3,6 @@ import { IWordProps } from './interfaces/IWord'
 import WordHeader from './word-header'
 
 const Word: FC<IWordProps> = ({ word }) => {
-  // console.log(word)
   const definitions = word.meanings[0].definitions
   const limitedDefinitions = definitions.slice(0, 3)
 

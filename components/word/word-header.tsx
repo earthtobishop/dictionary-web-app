@@ -2,11 +2,6 @@ import React, { FC } from 'react'
 import { IWordProps } from './interfaces/IWord'
 
 const WordHeader: FC<IWordProps> = ({ word, audio }) => {
-  // if (word.phonetics && word.phonetics.length > 0) {
-  //   const audio = new Audio(word.phonetics[0].audio)
-  //   console.log(audio)
-  // }
-
   const playAudio = () => {
     if (!audio) {
       return

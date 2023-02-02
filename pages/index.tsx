@@ -3,11 +3,13 @@ import Word from '@/components/word/word'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import { useFont } from '@/context/FontContext'
 
 export default function Home() {
   const [searchText, setSearchText] = useState('')
   const [word, setWord] = useState(null)
   const [notFound, setNotFound] = useState(false)
+  const { font, setFont } = useFont()
 
   useEffect(() => {
     const searchProduct = async () => {
@@ -28,7 +30,15 @@ export default function Home() {
     searchProduct()
   }, [searchText])
 
-  console.log(word)
+  let selectedFont
+
+  if (font === 'Sans Serif') {
+    selectedFont = 'font-sans'
+  } else if (font === 'Serif') {
+    selectedFont = 'font-serif'
+  } else if (font === 'Mono') {
+    selectedFont = 'font-mono'
+  }
 
   return (
     <>
@@ -38,7 +48,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main>
+      <main className={`${selectedFont}`}>
         <Search searchText={searchText} setSearchText={setSearchText} />
         {word && <Word word={word} />}
         {notFound && <p>Not Found</p>}
