@@ -1,6 +1,6 @@
 # Dictionary web app
 
-This is a simple dictionary browser built using Next.JS, TypeScript, and TailwindCSS. [Check It Out Here](https://entertainment-web-app-amber.vercel.app/).
+This is a simple dictionary browser built using Next.JS, TypeScript, and TailwindCSS. [Check It Out Here](https://dictionary-web-app-navy.vercel.app/).
 
 ## Table of contents
 
@@ -34,8 +34,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/earthtobishop/entertainment-web-app)
-- Live Site URL: (https://entertainment-web-app-amber.vercel.app/)
+- Solution URL: (https://github.com/earthtobishop/dictionary-web-app)
+- Live Site URL: (https://dictionary-web-app-navy.vercel.app/)
 
 ## My process
 
