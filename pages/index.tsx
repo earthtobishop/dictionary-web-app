@@ -28,6 +28,8 @@ export default function Home() {
     searchProduct()
   }, [searchText])
 
+  console.log(word)
+
   return (
     <>
       <Head>
