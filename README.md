@@ -18,7 +18,7 @@ This is a simple dictionary browser built using Next.JS, TypeScript, and Tailwin
 
 ### Features
 
-Your users should be able to:
+Users should be able to:
 
 - Search for words using the input field
 - See the Free Dictionary API's response for the searched word
